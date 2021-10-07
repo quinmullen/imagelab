@@ -22,7 +22,10 @@ public class DispPanelTest {
     @After
     public void tearDown() {
     }
-
+    
+    @Test
+    void imageTypeTest(){
+    }
 
 
 
