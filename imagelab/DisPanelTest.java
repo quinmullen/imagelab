@@ -13,6 +13,7 @@ public class DispPanelTest {
      */
     @Before
     public void setUp() {
+        testPanel = new DispPanel(mandel.jpg);
     }
 
     /**
@@ -22,11 +23,21 @@ public class DispPanelTest {
     @After
     public void tearDown() {
     }
-    
+
     @Test
-    void imageTypeTest(){
+    public void imageConstructorTypeTest(){
+        assertTrue(testPanel.img instanceof Image);
     }
 
+    @Test
+    public void paintTest(){
+        assertTrue(testPanel.g instanceof Graphics);
+        assertTrue(testPanel.img instanceof Image);
+    }
 
-
+    @Test
+    public void newImageTypeTest(){
+        testPanel.newImage(hiroshige.gif);
+        assertTrue(testPanel.img instance of Image);
+    }
 }
