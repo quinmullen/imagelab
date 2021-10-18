@@ -13,7 +13,7 @@ public class DisPanelTest {
      */
     @Before
     public void setUp() {
-        testPanel = new DispPanel(mandel.jpg);
+        testPanel = new DisPanel(mandel.jpg);
     }
 
     /**
